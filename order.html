@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Order online from Casa Fuego – tacos, burritos, enchiladas, fajitas, and more. Fresh Mexican food ready for pickup in San Antonio." />
+  <title>Order Online | Casa Fuego Mexican Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Banner -->
+  <header class="site-banner" role="banner">
+    <h1>Casa Fuego</h1>
+    <p class="tagline">Authentic Mexican &amp; Tex-Mex &bull; San Antonio, TX</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html" class="active" aria-current="page">Order</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" class="content-area" tabindex="-1">
+
+    <h2 class="section-title fade-up">Order Online</h2>
+    <p class="fade-up">Place your order for dine-in or pickup. All items are prepared fresh when you order. <strong>Pickup is ready in 20–30 minutes.</strong></p>
+
+    <!-- ===== TACOS ===== -->
+    <h3 class="menu-section-title" aria-label="Tacos section">🌮 Tacos</h3>
+    <div class="menu-grid" role="list">
+
+      <!-- Item 1 -->
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/taco-pastor.jpg"
+            alt="Two soft corn tortilla tacos al pastor topped with pineapple chunks, chopped onion, cilantro, and a drizzle of red salsa"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Tacos al Pastor &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">Tacos al Pastor</h4>
+          <p class="menu-item-desc">Slow-roasted pork marinated in achiote and guajillo chili, topped with fresh pineapple, onion, and cilantro on house-pressed corn tortillas. Served with salsa verde.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $12.99">$12.99</span>
+            <button class="add-to-cart" aria-label="Add Tacos al Pastor to cart" onclick="addToCart('Tacos al Pastor', 12.99)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/taco-birria.jpg"
+            alt="Birria tacos with dark red braised beef filling in crispy dipped tortillas, served with a rich consommé dipping broth"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Birria Tacos &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">Birria Tacos (Quesabirria)</h4>
+          <p class="menu-item-desc">Slow-braised beef cheek in a rich ancho-guajillo broth, stuffed into crispy melted cheese tortillas. Served with consommé for dipping and sides of diced onion and cilantro.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $15.99">$15.99</span>
+            <button class="add-to-cart" aria-label="Add Birria Tacos to cart" onclick="addToCart('Birria Tacos', 15.99)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 3 -->
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/taco-shrimp.jpg"
+            alt="Two flour tortilla tacos filled with grilled shrimp, shredded cabbage, mango salsa, and chipotle crema"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Shrimp Tacos &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">Grilled Shrimp Tacos</h4>
+          <p class="menu-item-desc">Gulf shrimp grilled with garlic-lime butter, served in flour tortillas with fresh cabbage slaw, mango-habanero salsa, and a smoky chipotle crema.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $14.50">$14.50</span>
+            <button class="add-to-cart" aria-label="Add Grilled Shrimp Tacos to cart" onclick="addToCart('Grilled Shrimp Tacos', 14.50)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== ENTREES ===== -->
+    <h3 class="menu-section-title" aria-label="Entrees section">🍽️ Entrees</h3>
+    <div class="menu-grid" role="list">
+
+      <!-- Item 4 -->
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/fajitas.jpg"
+            alt="Sizzling cast-iron skillet of chicken and steak fajitas with grilled onions and peppers, served with warm flour tortillas, sour cream, guacamole, and pico de gallo"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Fajita Platter &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">Casa Fuego Fajita Platter</h4>
+          <p class="menu-item-desc">Your choice of marinated chicken, steak, or a combination, served sizzling on a cast-iron skillet with peppers and onions. Comes with tortillas, guacamole, pico de gallo, sour cream, and rice &amp; beans.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $18.99">$18.99</span>
+            <button class="add-to-cart" aria-label="Add Fajita Platter to cart" onclick="addToCart('Fajita Platter', 18.99)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 5 -->
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/enchiladas.jpg"
+            alt="Two cheese and beef enchiladas smothered in dark red mole sauce with crumbled cotija cheese and jalapeños, served with Mexican rice and refried beans"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Enchiladas &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">Red Mole Enchiladas</h4>
+          <p class="menu-item-desc">Two corn tortillas filled with pulled chicken and Oaxacan cheese, smothered in Abuela Herrera's signature 21-ingredient red mole sauce. Topped with cotija cheese and sesame seeds. Served with rice and refried beans.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $16.50">$16.50</span>
+            <button class="add-to-cart" aria-label="Add Red Mole Enchiladas to cart" onclick="addToCart('Red Mole Enchiladas', 16.50)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 6 -->
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/burrito.jpg"
+            alt="A large overstuffed burrito wrapped in a grilled flour tortilla, cut in half to reveal seasoned beef, Spanish rice, black beans, shredded cheese, and sour cream"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Super Burrito &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">The Fuego Super Burrito</h4>
+          <p class="menu-item-desc">A massive grilled flour tortilla loaded with your choice of protein, Spanish rice, seasoned black beans, shredded cheddar-jack cheese, pico de gallo, sour cream, and house jalapeño hot sauce. Guaranteed to satisfy.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $13.99">$13.99</span>
+            <button class="add-to-cart" aria-label="Add Super Burrito to cart" onclick="addToCart('Fuego Super Burrito', 13.99)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== EXTRAS ===== -->
+    <h3 class="menu-section-title" aria-label="Sides and extras section">🥑 Sides &amp; Extras</h3>
+    <div class="menu-grid" role="list">
+
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/guacamole.jpg"
+            alt="Fresh guacamole in a stone molcajete bowl with a mound of crunchy tortilla chips beside it"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Guacamole &amp; Chips &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">Tableside Guacamole &amp; Chips</h4>
+          <p class="menu-item-desc">Hand-mashed Hass avocados with lime juice, cilantro, diced jalapeño, red onion, and a pinch of sea salt. Made fresh when you order, served with crispy house-fried tortilla chips.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $8.99">$8.99</span>
+            <button class="add-to-cart" aria-label="Add Guacamole and Chips to cart" onclick="addToCart('Guacamole & Chips', 8.99)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-item fade-up" role="listitem">
+        <figure>
+          <img
+            class="menu-item-img"
+            src="images/rice-beans.jpg"
+            alt="A side plate with a mound of tomato-infused Spanish rice and a serving of creamy refried pinto beans garnished with crumbled cheese"
+            width="400"
+            height="190"
+            loading="lazy"
+          />
+          <figcaption style="padding:4px 18px 0;font-size:0.78rem;">
+            Rice &amp; Beans &mdash; <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+        <div class="menu-item-body">
+          <h4 class="menu-item-name">Rice &amp; Beans Side</h4>
+          <p class="menu-item-desc">A generous portion of our slow-cooked Spanish rice simmered with tomato, garlic, and cumin, paired with creamy refried pinto beans topped with crumbled cotija cheese.</p>
+          <div class="menu-item-footer">
+            <span class="price" aria-label="Price: $4.99">$4.99</span>
+            <button class="add-to-cart" aria-label="Add Rice and Beans Side to cart" onclick="addToCart('Rice & Beans Side', 4.99)">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Shopping Cart Summary -->
+    <section class="highlight-box mt-32 fade-up" aria-label="Shopping cart" id="cart-section">
+      <h2 class="section-title">🛒 Your Cart</h2>
+      <div id="cart-items" aria-live="polite" aria-label="Cart items">
+        <p id="cart-empty-msg" style="color:#7a5c3a;">Your cart is empty. Add items above to get started!</p>
+      </div>
+      <div id="cart-total-row" style="display:none;border-top:2px solid var(--border);padding-top:14px;margin-top:14px;">
+        <strong style="font-size:1.2rem;">Total: <span id="cart-total" aria-live="polite">$0.00</span></strong>
+        <br/>
+        <button class="btn mt-16" onclick="checkout()" aria-label="Proceed to checkout">Proceed to Checkout</button>
+        <button class="btn btn-outline mt-16" onclick="clearCart()" aria-label="Clear all items from cart" style="background:transparent;color:var(--dark-red);border:2px solid var(--dark-red);margin-left:12px;">Clear Cart</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <p><strong>Casa Fuego Mexican Restaurant</strong></p>
+    <hr class="footer-divider" />
+    <p>4821 Riverwalk Blvd, San Antonio, TX 78201 &bull; (210) 555-0198</p>
+    <p>&copy; 2025 Casa Fuego &bull; <a href="mailto:student@student.cac.edu">student@student.cac.edu</a> &bull; Web Designer</p>
+  </footer>
+
+  <!-- Shopping Cart Script -->
+  <script>
+    // Cart state
+    let cart = [];
+
+    // Floating cart bar
+    const cartBar = document.createElement('div');
+    cartBar.className = 'cart-bar';
+    cartBar.setAttribute('role', 'status');
+    cartBar.setAttribute('aria-live', 'polite');
+    document.body.appendChild(cartBar);
+
+    function addToCart(name, price) {
+      const existing = cart.find(i => i.name === name);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ name, price, qty: 1 });
+      }
+      renderCart();
+      showCartBar();
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items');
+      const totalRow = document.getElementById('cart-total-row');
+      const emptyMsg = document.getElementById('cart-empty-msg');
+
+      if (cart.length === 0) {
+        emptyMsg.style.display = '';
+        totalRow.style.display = 'none';
+        container.innerHTML = '';
+        container.appendChild(emptyMsg);
+        return;
+      }
+
+      emptyMsg.style.display = 'none';
+      totalRow.style.display = '';
+
+      let html = '<ul style="list-style:none;padding:0;">';
+      let total = 0;
+      cart.forEach((item, idx) => {
+        const subtotal = item.price * item.qty;
+        total += subtotal;
+        html += `<li style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);">
+          <span><strong>${item.name}</strong> &times; ${item.qty}</span>
+          <span style="display:flex;align-items:center;gap:12px;">
+            <span>$${subtotal.toFixed(2)}</span>
+            <button onclick="removeItem(${idx})" style="background:none;border:none;color:var(--dark-red);cursor:pointer;font-size:1.1rem;" aria-label="Remove ${item.name} from cart">&times;</button>
+          </span>
+        </li>`;
+      });
+      html += '</ul>';
+      container.innerHTML = html;
+      document.getElementById('cart-total').textContent = '$' + total.toFixed(2);
+    }
+
+    function removeItem(idx) {
+      cart.splice(idx, 1);
+      renderCart();
+      showCartBar();
+    }
+
+    function clearCart() {
+      cart = [];
+      renderCart();
+      cartBar.style.display = 'none';
+    }
+
+    function checkout() {
+      alert('Thank you for your order! Your food will be ready for pickup in 20–30 minutes. ¡Provecho!');
+      clearCart();
+    }
+
+    function showCartBar() {
+      const count = cart.reduce((s, i) => s + i.qty, 0);
+      const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+      if (count === 0) { cartBar.style.display = 'none'; return; }
+      cartBar.textContent = `🛒 ${count} item${count !== 1 ? 's' : ''} — $${total.toFixed(2)}`;
+      cartBar.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

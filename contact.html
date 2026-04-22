@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Casa Fuego – find our address, phone number, and send us a message. Located at 4821 Riverwalk Blvd, San Antonio, TX." />
+  <title>Contact Us | Casa Fuego Mexican Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Banner -->
+  <header class="site-banner" role="banner">
+    <h1>Casa Fuego</h1>
+    <p class="tagline">Authentic Mexican &amp; Tex-Mex &bull; San Antonio, TX</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" class="content-area" tabindex="-1">
+
+    <h2 class="section-title fade-up">Get in Touch</h2>
+    <p class="fade-up">We'd love to hear from you — whether you have a question, want to book a large party, or just want to say hola!</p>
+
+    <div class="contact-grid mt-32">
+
+      <!-- Contact Info Column -->
+      <section aria-labelledby="info-heading" class="fade-up">
+        <h3 id="info-heading" class="section-title" style="font-size:1.4rem;">Find Us</h3>
+
+        <address aria-label="Casa Fuego restaurant address and contact details">
+          <strong>Casa Fuego Mexican Restaurant</strong><br />
+          4821 Riverwalk Blvd<br />
+          San Antonio, TX 78201<br /><br />
+          📞 <a href="tel:+12105550198">(210) 555-0198</a><br />
+          ✉️ <a href="mailto:hola@casafuego.com">hola@casafuego.com</a>
+        </address>
+
+        <h3 class="contact-info" style="font-family:var(--font-display);font-size:1.2rem;color:var(--dark-red);margin:24px 0 10px;">Hours</h3>
+        <table class="hours-table" style="font-size:0.9rem;" aria-label="Casa Fuego hours of operation">
+          <caption class="sr-only">Weekly business hours</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mon – Wed</td><td>11:00 AM – 9:00 PM</td></tr>
+            <tr><td>Thu</td><td>11:00 AM – 10:00 PM</td></tr>
+            <tr><td>Fri – Sat</td><td>11:00 AM – 11:00 PM</td></tr>
+            <tr><td>Sunday</td><td>10:00 AM – 8:00 PM</td></tr>
+          </tbody>
+        </table>
+
+        <!-- Map / Location Image -->
+        <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--dark-red);margin:28px 0 12px;">Our Location</h3>
+        <figure class="map-placeholder" aria-label="Map showing Casa Fuego location at 4821 Riverwalk Blvd, San Antonio, TX">
+          <img
+            src="images/map.jpg"
+            alt="Street map showing Casa Fuego restaurant location on Riverwalk Boulevard in San Antonio Texas, near the downtown riverwalk area"
+            width="480"
+            height="230"
+            loading="lazy"
+          />
+          <figcaption style="padding:8px 12px;font-size:0.8rem;background:var(--cream);">
+            4821 Riverwalk Blvd, San Antonio, TX 78201 &mdash;
+            <a
+              href="https://maps.google.com/?q=4821+Riverwalk+Blvd+San+Antonio+TX"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Casa Fuego location in Google Maps (opens in new tab)"
+            >Open in Google Maps</a>
+          </figcaption>
+        </figure>
+
+        <!-- Additional location photo -->
+        <figure style="margin-top:20px;">
+          <img
+            src="images/exterior.jpg"
+            alt="The exterior of Casa Fuego restaurant at night with warm string lights, a painted flame logo sign above the entrance, and guests arriving at the front door"
+            width="480"
+            height="200"
+            loading="lazy"
+            style="width:100%;border-radius:8px;object-fit:cover;"
+          />
+          <figcaption>
+            Casa Fuego's front entrance on Riverwalk Blvd &mdash;
+            <cite><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels (CC0)</a></cite>
+          </figcaption>
+        </figure>
+
+      </section>
+
+      <!-- Contact Form Column -->
+      <section aria-labelledby="form-heading" class="fade-up">
+        <h3 id="form-heading" class="section-title" style="font-size:1.4rem;">Send Us a Message</h3>
+
+        <div class="contact-form">
+          <fieldset>
+            <legend>Contact Form</legend>
+
+            <div class="form-group">
+              <label for="full-name">Full Name <span aria-hidden="true" style="color:var(--red);">*</span></label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Your full name"
+                required
+                autocomplete="name"
+                aria-required="true"
+                aria-describedby="name-hint"
+              />
+              <span id="name-hint" class="sr-only">Enter your first and last name</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true" style="color:var(--red);">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+                aria-describedby="email-hint"
+              />
+              <span id="email-hint" class="sr-only">We'll respond to this email address</span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(210) 555-0000"
+                autocomplete="tel"
+                aria-describedby="phone-hint"
+              />
+              <span id="phone-hint" class="sr-only">Optional – include area code</span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" aria-label="Message subject">
+                <option value="">-- Select a topic --</option>
+                <option value="reservation">Large Party / Reservation</option>
+                <option value="catering">Catering Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="general">General Question</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true" style="color:var(--red);">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us how we can help you…"
+                required
+                aria-required="true"
+                rows="5"
+                aria-describedby="message-hint"
+              ></textarea>
+              <span id="message-hint" class="sr-only">Please describe your question or comment in detail</span>
+            </div>
+
+            <div class="form-group" style="display:flex;align-items:center;gap:10px;">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                style="width:auto;height:18px;cursor:pointer;"
+              />
+              <label for="newsletter" style="text-transform:none;letter-spacing:0;font-size:0.95rem;font-weight:400;margin-bottom:0;cursor:pointer;">
+                Sign me up for the Casa Fuego newsletter for specials and events
+              </label>
+            </div>
+
+            <button
+              type="button"
+              class="btn"
+              style="width:100%;font-size:1rem;"
+              onclick="submitForm()"
+              aria-label="Submit contact form"
+            >
+              Send Message ✉️
+            </button>
+
+          </fieldset>
+        </div>
+
+        <!-- Success message (hidden by default) -->
+        <div
+          id="form-success"
+          role="alert"
+          aria-live="assertive"
+          style="display:none;background:#e8f5e9;border:2px solid #4caf50;border-radius:10px;padding:20px 24px;margin-top:20px;color:#2e7d32;"
+        >
+          <strong>¡Gracias!</strong> Your message has been sent. We'll get back to you within 24 hours. 🌮
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <p><strong>Casa Fuego Mexican Restaurant</strong></p>
+    <hr class="footer-divider" />
+    <p>4821 Riverwalk Blvd, San Antonio, TX 78201 &bull; (210) 555-0198</p>
+    <p>&copy; 2025 Casa Fuego &bull; <a href="mailto:student@student.cac.edu">student@student.cac.edu</a> &bull; Web Designer</p>
+  </footer>
+
+  <!-- Form Validation Script -->
+  <script>
+    function submitForm() {
+      const name    = document.getElementById('full-name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Simple validation
+      if (!name) {
+        alert('Please enter your full name.');
+        document.getElementById('full-name').focus();
+        return;
+      }
+      if (!email || !email.includes('@')) {
+        alert('Please enter a valid email address.');
+        document.getElementById('email').focus();
+        return;
+      }
+      if (!message) {
+        alert('Please enter a message before submitting.');
+        document.getElementById('message').focus();
+        return;
+      }
+
+      // Show success message
+      document.getElementById('form-success').style.display = 'block';
+      document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Clear form fields
+      document.getElementById('full-name').value  = '';
+      document.getElementById('email').value       = '';
+      document.getElementById('phone').value       = '';
+      document.getElementById('subject').value     = '';
+      document.getElementById('message').value     = '';
+      document.getElementById('newsletter').checked = false;
+    }
+  </script>
+
+</body>
+</html>
