@@ -252,9 +252,8 @@
     <!-- Shopping Cart Summary -->
     <section class="highlight-box mt-32 fade-up" aria-label="Shopping cart" id="cart-section">
       <h2 class="section-title">🛒 Your Cart</h2>
-      <div id="cart-items" aria-live="polite" aria-label="Cart items">
-        <p id="cart-empty-msg" style="color:#7a5c3a;">Your cart is empty. Add items above to get started!</p>
-      </div>
+      <p id="cart-empty-msg" style="color:#7a5c3a;">Your cart is empty. Add items above to get started!</p>
+<div id="cart-list" aria-live="polite" aria-label="Cart items"></div>
       <div id="cart-total-row" style="display:none;border-top:2px solid var(--border);padding-top:14px;margin-top:14px;">
         <strong style="font-size:1.2rem;">Total: <span id="cart-total" aria-live="polite">$0.00</span></strong>
         <br/>
@@ -277,14 +276,14 @@
   <script>
     // Cart state
     let cart = [];
-
+ 
     // Floating cart bar
     const cartBar = document.createElement('div');
     cartBar.className = 'cart-bar';
     cartBar.setAttribute('role', 'status');
     cartBar.setAttribute('aria-live', 'polite');
     document.body.appendChild(cartBar);
-
+ 
     function addToCart(name, price) {
       const existing = cart.find(i => i.name === name);
       if (existing) {
@@ -295,23 +294,22 @@
       renderCart();
       showCartBar();
     }
-
+ 
     function renderCart() {
-      const container = document.getElementById('cart-items');
-      const totalRow = document.getElementById('cart-total-row');
-      const emptyMsg = document.getElementById('cart-empty-msg');
-
+      const cartList   = document.getElementById('cart-list');
+      const totalRow   = document.getElementById('cart-total-row');
+      const emptyMsg   = document.getElementById('cart-empty-msg');
+ 
       if (cart.length === 0) {
         emptyMsg.style.display = '';
         totalRow.style.display = 'none';
-        container.innerHTML = '';
-        container.appendChild(emptyMsg);
+        cartList.innerHTML = '';
         return;
       }
-
+ 
       emptyMsg.style.display = 'none';
       totalRow.style.display = '';
-
+ 
       let html = '<ul style="list-style:none;padding:0;">';
       let total = 0;
       cart.forEach((item, idx) => {
@@ -326,27 +324,27 @@
         </li>`;
       });
       html += '</ul>';
-      container.innerHTML = html;
+      cartList.innerHTML = html;
       document.getElementById('cart-total').textContent = '$' + total.toFixed(2);
     }
-
+ 
     function removeItem(idx) {
       cart.splice(idx, 1);
       renderCart();
       showCartBar();
     }
-
+ 
     function clearCart() {
       cart = [];
       renderCart();
-      cartBar.style.display = 'none';
+      showCartBar();
     }
-
+ 
     function checkout() {
       alert('Thank you for your order! Your food will be ready for pickup in 20–30 minutes. ¡Provecho!');
       clearCart();
     }
-
+ 
     function showCartBar() {
       const count = cart.reduce((s, i) => s + i.qty, 0);
       const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
